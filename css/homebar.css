@@ -11,7 +11,7 @@ body {
 .header-bar {
     position: fixed;
     width: 100%;
-    min-width: 580px;
+    min-width: 650px;
     height: 40px;
     padding: 5px 0px 5px 0px;
     background-color: black;
@@ -31,10 +31,10 @@ body {
 }
 
 .header-button {
-    width: 70px;
+    width: 100px;
     height: inherit;
     float: right;
-    margin-right: 5px;
+    margin-right: 10px;
     border-top: 0px;
     border-bottom: 0px;
     transition: background-color 0.5s;
