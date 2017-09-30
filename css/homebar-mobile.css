@@ -1,0 +1,13 @@
+.header-bar {
+    height: 80px;
+}
+
+.header-link, .header-buttontext, .footer-text {
+    vertical-align: middle;
+    color: white;
+    float: left;
+}
+
+.header-buttontext {
+    font-size: 50px;
+}
