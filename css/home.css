@@ -1,8 +1,26 @@
+body {
+    flex-direction: column;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+ }
+
 .card-container {
-    float:left;
+    flex-direction: column;
     margin: 15px 1% 0px 1%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 98%;
+    max-width: 800px;
     background-color: rgba(0,0,0,0.1);
     transition-property: 1s;
     transition: initial 0.5s ease-in-out;
@@ -21,18 +39,6 @@
     }
     100% {
       transform: scale(1);
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .card-container {
-        width: 48%;
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    .card-container {
-        width: 31.3%;
     }
 }
 

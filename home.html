@@ -6,36 +6,40 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/homebar.css">
-    <link rel="stylesheet" type="text/css" href="css/homebar-mobile.css" media="handheld">
+    <link rel="stylesheet" type="text/css" href="css/homebarV2.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
-    <link rel="stylesheet" type="text/css" href="css/home-mobile.css" media="handheld">
 </head>
 
 <body>
-    <header class="header-bar">
-        <img class="header-logo" src="resources/logo.png">
-        <p class="header-link">www.website.com</p>
-        <div class="header-button">
-            <p class="header-buttontext">Contact</p>
-        </div>
-        <div class="header-button">
-            <p class="header-buttontext">Gallery</p>
-        </div>
-        <div class="header-button">
-            <p class="header-buttontext">About</p>
-        </div>
-        <div class="header-button">
-            <p class="header-buttontext">Home</p>
-        </div>
+    <header>
+        <img class="logo" src="resources/logo.png">
+        <p class="text link">www.website.com</p>
+        <nav>
+            <label for="hammenu" class="fa fa-bars text hamburgerbutton" aria-hidden="true"></label>
+            <input id="hammenu" type="checkbox">
+            <ul>
+                <a href="#" class="text">
+                    <li>Home</li>
+                </a>
+                <a href="#" class="text">
+                    <li>About</li>
+                </a>
+                <a href="#" class="text">
+                    <li>Gallery</li>
+                </a>
+                <a href="#" class="text">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
     </header>
-    <header id="header" class="header-reserve"></header>
     <aside class="side-bar">
         <ul>
             <li><a href="#header"><i class="fa fa-level-up" aria-hidden="true"></i></a></li>
             <li><a href="#footer"><i class="fa fa-level-down" aria-hidden="true"></i></a></li>
         </ul>
     </aside>
+    <div class="flex-container">
     <article class="card-container">
         <div class="head">
             <p class="title">Test post</p>
@@ -65,6 +69,7 @@
         </div>
         <img class="imgpost" src="https://memegenerator.net/img/instances/250x250/80324340/finished-success.jpg">
     </article>
+    </div>
     <div style="height:0px"></div>
     <footer id="footer" class="footer-bar">
         <p class="footer-text">&copy; Marty & Ymke</p>
