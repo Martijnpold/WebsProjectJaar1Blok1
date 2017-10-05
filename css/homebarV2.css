@@ -4,11 +4,17 @@ body {
 }
 
 header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     background-color: black;
     width: 100%;
-    position: relative;
+    z-index: 999;
+}
+
+.header-reserve {
+    height: 80px;
+    margin-bottom: 0px;
 }
 
 header .text {
@@ -54,6 +60,13 @@ header nav ul ul {
     display: none;
 }
 
+nav li:hover > ul {
+    display: block;
+    top: 25%;
+    width: 100%;
+    left: -100%;
+}
+
 header nav a {
     color: white;
     text-decoration: none;
@@ -84,6 +97,10 @@ header nav a:hover {
 }
 
 @media screen and (min-width: 601px) {
+    .header-reserve {
+        height: 60px;
+    }
+
     header img {
         height: 60px;
     }
@@ -113,13 +130,20 @@ header nav a:hover {
         margin-left: auto;
     }
 
+    nav li:hover > ul {
+        display: block;
+        top: 0px;
+        width: 100%;
+        left: 0px;
+    }
+
     header nav .hamburgerbutton {
         display: none;
         background-color:red;
     }
 
-    header nav a {
+    header nav ul li a {
         position: relative;
-        padding-top: 0px;
+        padding-bottom: 16px;
     }
 }
