@@ -3,20 +3,21 @@ body {
     margin: 0px;
 }
 
-header {
+#homebar {
     background-color: black;
     position: fixed;
     display: flex;
     flex-direction: row;
     width: 100%;
     z-index: 999;
+    height: 40px;
 }
 
 .header-reserve {
     height: 40px;
 }
 
-header .text {
+#homebar .text {
     line-height: 40px;
     margin: 0px;
     height: 100%;
@@ -24,31 +25,31 @@ header .text {
     font-size: 30px;
 }
 
-header .link {
+#homebar .link {
     margin-left: 5px;
     height: fit-content;
     display: none;
 }
 
-header img {
+#homebar img {
     height: 40px;
 }
 
-header nav input {
+#homebar nav input {
     display: none;
 }
 
-header nav {
+#homebar nav {
     position: relative;
     margin-left: auto;
 }
 
-header nav .hamburgerbutton {
+#homebar .hamburgerbutton {
     font-size: 40px;
     margin-right: 20px;
 }
 
-header nav ul {
+#homebar ul {
     margin: 0px;
     display: none;
     list-style: none;
@@ -57,18 +58,18 @@ header nav ul {
     padding: 0px;
 }
 
-header nav ul ul {
+#homebar nav ul ul {
     display: none;
 }
 
-nav li:hover > ul {
+#homebar nav li:hover > ul {
     display: block;
     top: 25%;
     width: 100%;
     left: -100%;
 }
 
-header nav a {
+#homebar a {
     background-color: black;
     border-bottom: 1px solid #2e2e2e;
     text-decoration: none;
@@ -78,43 +79,47 @@ header nav a {
     display: block;
 }
 
+#homebar nav a:hover {
+    background-color: #2e2e2e;
+}
+
 @media screen and (min-width: 300px) {
-    header .link {
+    #homebar .link {
         display: flex;
         font-size: 6vw;
     }
 }
 
-@media screen and (min-width: 436px) {
-    header .link {
+@media screen and (min-width: 480px) {
+    #homebar .link {
         color: white;
         display:flex;
         font-size: 30px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    header nav #hammenu:checked + ul {
+@media screen and (max-width: 1024px) {
+    #homebar nav #hammenu:checked + ul {
         display: block;
     }
 }
 
-header nav a:hover {
-    background-color: #2e2e2e;
-}
-
-@media screen and (min-width: 601px) {
-    header img {
+@media screen and (min-width: 1024px) {
+    #homebar {
         height: 60px;
     }
 
-    header .text {
+    #homebar img {
+        height: 60px;
+    }
+
+    #homebar .text {
         height: 60px;
         line-height: 60px;
         font-size: 20px;
     }
 
-    header nav ul {
+    #homebar nav ul {
         position: relative;
         display: flex;
         left: 0px;
@@ -122,23 +127,23 @@ header nav a:hover {
         margin-left: auto;
     }
 
-    nav li:hover > ul {
-        display: block;
+    #homebar nav li:hover > ul {
+        display: relative;
         top: 0px;
         width: 100%;
         left: 0px;
     }
 
-    header nav .hamburgerbutton {
+    #homebar nav .hamburgerbutton {
         display: none;
         background-color:red;
     }
 
-    header nav ul li a {
+    #homebar nav ul li a {
         position: relative;
     }
 
-    header nav a {
+    #homebar nav a {
         background-color: black;
         border-bottom: 0px;
     }
