@@ -4,22 +4,22 @@ body {
 }
 
 header {
+    background-color: black;
     position: fixed;
     display: flex;
     flex-direction: row;
-    background-color: black;
     width: 100%;
     z-index: 999;
 }
 
 .header-reserve {
     height: 80px;
-    margin-bottom: 0px;
 }
 
 header .text {
+    line-height: 80px;
     margin: 0px;
-    padding-top: 20px;
+    height: 100%;
     color: white;
     font-size: 30px;
 }
@@ -49,6 +49,7 @@ header nav .hamburgerbutton {
 }
 
 header nav ul {
+    margin: 0px;
     display: none;
     list-style: none;
     position: absolute;
@@ -68,21 +69,27 @@ nav li:hover > ul {
 }
 
 header nav a {
-    color: white;
+    background-color: black;
+    border-bottom: 1px solid #2e2e2e;
     text-decoration: none;
-    padding: 20px 10px 20px 10px;
+    color: white;
+    padding: 0px 10px;
     font-size: 20px;
     display: block;
-    background-color: black;
-    border: 1px solid #2e2e2e;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
+}
+
+@media screen and (min-width: 300px) {
+    header .link {
+        display: flex;
+        font-size: 6vw;
+    }
 }
 
 @media screen and (min-width: 436px) {
     header .link {
+        color: white;
         display:flex;
+        font-size: 30px;
     }
 }
 
@@ -109,15 +116,9 @@ header nav a:hover {
         height: 60px;
     }
 
-    header .link {
-        padding-top: 19px;
-        margin-top: 0px;
-        font-size: 20px;
-    }
-
     header .text {
-        padding-top: 19px;
-        margin-top: 0px;
+        height: 60px;
+        line-height: 60px;
         font-size: 20px;
     }
 
@@ -126,7 +127,6 @@ header nav a:hover {
         display: flex;
         left: 0px;
         height: 100%;
-        margin: 0px;
         margin-left: auto;
     }
 
@@ -144,6 +144,10 @@ header nav a:hover {
 
     header nav ul li a {
         position: relative;
-        padding-bottom: 16px;
+    }
+
+    header nav a {
+        background-color: black;
+        border-bottom: 0px;
     }
 }
