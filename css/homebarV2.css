@@ -104,6 +104,10 @@ header nav a:hover {
 }
 
 @media screen and (min-width: 601px) {
+    header img {
+        height: 60px;
+    }
+
     header .text {
         height: 60px;
         line-height: 60px;
