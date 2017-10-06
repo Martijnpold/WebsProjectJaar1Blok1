@@ -15,6 +15,7 @@ body {
 
 .header-reserve {
     height: 40px;
+    width: 100%;
 }
 
 #homebar .text {
