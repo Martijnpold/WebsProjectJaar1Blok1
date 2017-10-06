@@ -83,6 +83,10 @@ body {
     background-color: #2e2e2e;
 }
 
+#homebar nav #hammenu:checked + ul {
+    display: block;
+}
+
 @media screen and (min-width: 300px) {
     #homebar .link {
         display: flex;
@@ -95,12 +99,6 @@ body {
         color: white;
         display:flex;
         font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    #homebar nav #hammenu:checked + ul {
-        display: block;
     }
 }
 
@@ -121,6 +119,10 @@ body {
         height: 60px;
         line-height: 60px;
         font-size: 20px;
+    }
+
+    #homebar nav #hammenu:checked + ul {
+        display: flex;
     }
 
     #homebar nav ul {

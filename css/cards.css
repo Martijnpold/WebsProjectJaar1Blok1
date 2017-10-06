@@ -1,0 +1,65 @@
+.card-container {
+    flex-direction: column;
+    margin: 15px 1% 0px 1%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 98%;
+    max-width: 800px;
+    background-color: rgba(0,0,0,0.1);
+    transition-property: 1s;
+    animation: 0.5s ease-out 0s 1 bounce;
+    height: inherit;
+}
+
+.card-container:hover {
+    background-color: rgba(92, 102, 255, 0.3);
+}
+
+@keyframes bounce {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    80% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.card-container .head {
+    position: relative;
+    width: 96%;
+    padding: 5px 2% 14px 2%;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.2);
+}
+
+.card-container .title {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-container .date {
+    position: absolute;
+    margin: 0px;
+    font-size: 14px;
+    float: right;
+    width: fit-content;
+    right: 5px;
+    bottom: 1px;
+}
+
+.card-container .textpost {
+    padding: 2px 2%;
+    margin:10px 0px 10px 0px;
+}
+
+.card-container .imgpost {
+    padding: 2px 2%;
+    margin:10px 0px 10px 0px;
+    width: 96%;
+}

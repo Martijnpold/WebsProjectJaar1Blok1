@@ -1,0 +1,21 @@
+.flex-container {
+    display: flex;
+ }
+
+.card-container {
+    margin-top: 10px;
+    display: flex;
+    flex: 0 0 33.3%;
+    margin: 0px;
+    box-shadow: transparent;
+    background-clip: padding-box;
+    border: 15px solid transparent;
+ }
+
+ .card-container .imgpost {
+     align-self: center;
+     width: 94%;
+     height: auto;
+     margin: 0px;
+     padding: 0px;
+ }
