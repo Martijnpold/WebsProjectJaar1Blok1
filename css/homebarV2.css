@@ -65,12 +65,12 @@ body {
 
 .homebar nav li:hover > ul {
     display: block;
-    top: 25%;
     width: 100%;
     left: -100%;
+    top: 0%;
 }
 
-.homebar a {
+.homebar nav a {
     background-color: black;
     border-bottom: 1px solid #2e2e2e;
     text-decoration: none;
