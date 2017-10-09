@@ -3,7 +3,7 @@ body {
     margin: 0px;
 }
 
-#homebar {
+.homebar {
     background-color: black;
     position: fixed;
     display: flex;
@@ -13,11 +13,12 @@ body {
     height: 40px;
 }
 
-.header-reserve {
+.homebar-reserve {
     height: 40px;
+    width: 100%;
 }
 
-#homebar .text {
+.homebar .text {
     line-height: 40px;
     margin: 0px;
     height: 100%;
@@ -25,51 +26,52 @@ body {
     font-size: 30px;
 }
 
-#homebar .link {
+.homebar .link {
     margin-left: 5px;
     height: fit-content;
     display: none;
 }
 
-#homebar img {
+.homebar img {
     height: 40px;
 }
 
-#homebar nav input {
+.homebar nav input {
     display: none;
 }
 
-#homebar nav {
+.homebar nav {
     position: relative;
     margin-left: auto;
 }
 
-#homebar .hamburgerbutton {
+.homebar .hamburgerbutton {
     font-size: 40px;
     margin-right: 20px;
 }
 
-#homebar ul {
+.homebar ul {
     margin: 0px;
-    display: none;
     list-style: none;
     position: absolute;
-    left: -83px;
+    left: 100%;
     padding: 0px;
+    transform: translateX(100%);
+    transition: all 1s;
 }
 
-#homebar nav ul ul {
-    display: none;
-}
-
-#homebar nav li:hover > ul {
+.homebar nav ul ul {
     display: block;
-    top: 25%;
-    width: 100%;
-    left: -100%;
 }
 
-#homebar a {
+.homebar nav li:hover > ul {
+    display: block;
+    width: 100%;
+    left: -200%;
+    top: 0%;
+}
+
+.homebar nav a {
     background-color: black;
     border-bottom: 1px solid #2e2e2e;
     text-decoration: none;
@@ -79,23 +81,29 @@ body {
     display: block;
 }
 
-#homebar nav a:hover {
+.homebar nav a:hover {
     background-color: #2e2e2e;
 }
 
-#homebar nav #hammenu:checked + ul {
+.homebar nav .hammenu:checked + ul {
     display: block;
+    transform: translateX(calc(-100%));
+    transition: all 1s;
+}
+
+.homebar nav ul ul {
+    transition: all 0s;
 }
 
 @media screen and (min-width: 300px) {
-    #homebar .link {
+    .homebar .link {
         display: flex;
         font-size: 6vw;
     }
 }
 
 @media screen and (min-width: 480px) {
-    #homebar .link {
+    .homebar .link {
         color: white;
         display:flex;
         font-size: 30px;
@@ -103,7 +111,7 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-    #homebar {
+    .homebar {
         height: 60px;
     }
 
@@ -111,21 +119,21 @@ body {
         height: 60px;
     }
 
-    #homebar img {
+    .homebar img {
         height: 60px;
     }
 
-    #homebar .text {
+    .homebar .text {
         height: 60px;
         line-height: 60px;
         font-size: 20px;
     }
 
-    #homebar nav #hammenu:checked + ul {
+    .homebar nav .hammenu:checked + ul {
         display: flex;
     }
 
-    #homebar nav ul {
+    .homebar nav ul {
         position: relative;
         display: flex;
         left: 0px;
@@ -133,23 +141,23 @@ body {
         margin-left: auto;
     }
 
-    #homebar nav li:hover > ul {
+    .homebar nav li:hover > ul {
         display: relative;
         top: 0px;
         width: 100%;
         left: 0px;
     }
 
-    #homebar nav .hamburgerbutton {
+    .homebar nav .hamburgerbutton {
         display: none;
         background-color:red;
     }
 
-    #homebar nav ul li a {
+    .homebar nav ul li a {
         position: relative;
     }
 
-    #homebar nav a {
+    .homebar nav a {
         background-color: black;
         border-bottom: 0px;
     }
