@@ -1,9 +1,11 @@
 .pl1 {
     background-image: url("../resources/martyparallax2.png");
+    height: 100%;
 }
 
 .pl2 {
     background-image: url("../resources/martyparallax1.png");
+    height: 100%;
 }
 
 .pl3 {
