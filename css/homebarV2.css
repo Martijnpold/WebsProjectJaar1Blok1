@@ -51,17 +51,16 @@ body {
 }
 
 .homebar ul {
+    display: flex;
     margin: 0px;
     list-style: none;
     position: absolute;
     left: 100%;
     padding: 0px;
-    transform: translateX(100%);
-    transition: all 1s;
 }
 
 .homebar nav ul ul {
-    display: block;
+    display: none;
 }
 
 .homebar nav li:hover > ul {
@@ -85,12 +84,6 @@ body {
     background-color: #2e2e2e;
 }
 
-.homebar nav .hammenu:checked + ul {
-    display: block;
-    transform: translateX(calc(-100%));
-    transition: all 1s;
-}
-
 .homebar nav ul ul {
     transition: all 0s;
 }
@@ -107,6 +100,23 @@ body {
         color: white;
         display:flex;
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .homebar ul {
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .homebar nav > ul {
+        display: block;
+    }
+    
+    .homebar nav .hammenu:checked + ul {
+        display: block;
+        transform: translateX(calc(-100%));
+        transition: all 1s;
     }
 }
 
@@ -131,6 +141,10 @@ body {
 
     .homebar nav .hammenu:checked + ul {
         display: flex;
+    }
+
+    .homebar nav .hammenu:checked + ul {
+        display: block;
     }
 
     .homebar nav ul {
