@@ -26,6 +26,7 @@
                 var progress = (dist - visible) / fade;
                 if (progress <= 1) {
                     opac = Math.abs(progress - 1);
+                    if(opac > 0.75) opac = 0.75;
                     $(".fade" + i).css("opacity", opac);
                     $(".fade" + i).css("display", "block");
                 } else {
@@ -78,8 +79,10 @@
     </div>
     <div class="parallax pl2">
         <div class="caption fade2">
-            <p><b>Freelance Java Developer & Gamer</b><br>
-            Born on: 16 nov 1998<br>
+            <p><b>Freelance Java Developer & Gamer</b><br> Born on: 16 nov 1998<br> Hello! My name is Martijn. I'm a Dutch Avans
+                student from Den Bosch. Currently I am in my first year of college. My job is being a Freelance Java Developer,
+                more information about my work can be found in the job section.
+            </p>
         </div>
     </div>
     <div class="parallax pl1">
@@ -121,9 +124,9 @@
         <div class="caption fade6">
             <p>
                 <b>Contact:</b></br>
-                <a href="https://www.youtube.com/channel/UCPziF3pSau8DD6htmGjy3Hg?view_as=subscriber">YouTube</a></br>
-                <a href="https://twitter.com/MartijnPold">Twitter</a></br>
-                <a href="mailto:mrpolder@avans.nl">E-mail</a>
+                <a href="https://www.youtube.com/channel/UCPziF3pSau8DD6htmGjy3Hg?view_as=subscriber">YouTube - My YouTube Channel</a></br>
+                <a href="https://twitter.com/MartijnPold">Twitter - My Twitter Page</a></br>
+                <a href="mailto:mrpolder@avans.nl">E-mail - Click to E-Mail me!</a>
             </p>
         </div>
     </div>

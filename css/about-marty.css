@@ -27,7 +27,7 @@
 }
 
 .caption + .fade1 {
-    opacity: 1;
+    opacity: 0.75;
 }
 
 .caption p {
