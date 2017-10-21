@@ -10,6 +10,35 @@
     <link rel="stylesheet" type="text/css" href="css/homebarV2.css">
     <link rel="stylesheet" type="text/css" href="css/parallax.css">
     <link rel="stylesheet" type="text/css" href="css/about-marty.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            var height = $(window).height();
+            var offset = height / 4;
+            var visible = height / 4;
+            var fade = height / 4;
+
+            var i = 1;
+            while ($(".fade" + i)[0]) {
+                var center = height * (i - 1) + offset;
+                var dist = Math.abs(center - scroll);
+                var progress = (dist - visible) / fade;
+                if (progress <= 1) {
+                    opac = Math.abs(progress - 1);
+                    $(".fade" + i).css("opacity", opac);
+                    $(".fade" + i).css("display", "block");
+                } else {
+                    $(".fade" + i).css("opacity", 0);
+                    $(".fade" + i).css("display", "none");
+                }
+                i++;
+            }
+
+            //$(".fade1").css("opacity", 1 (v-offset)/(h/4));
+            //if(v > h) $(".fade2").css("opacity", 1 v/(h/2)+0.1);
+        });
+    </script>
 </head>
 
 <body>
@@ -41,11 +70,63 @@
     </header>
     <div class="homebar-reserve"></div>
     <div class="parallax pl1">
-        <div class="caption">
-            <p>SCROLL DOWN</p>
+        <div id="debug" class="caption">
+        </div>
+        <div class="caption fade1">
+            <p><b>Martijn Polderman</b></p>
         </div>
     </div>
-    <div class="parallax pl2"></div>
+    <div class="parallax pl2">
+        <div class="caption fade2">
+            <p><b>Freelance Java Developer & Gamer</b><br>
+            Born on: 16 nov 1998<br>
+        </div>
+    </div>
+    <div class="parallax pl1">
+        <div class="caption fade3">
+            <p>
+                <b>Experience in:</b></br>
+                Java</br>
+                GML</br>
+                HTML + CSS</br>
+                SQL</br>
+                C++</br>
+                Python</br>
+                Sleeping</br>
+            </p>
+        </div>
+    </div>
+    <div class="parallax pl2">
+        <div class="caption fade4">
+            <p>
+                <b>Hobbies:</b></br>
+                Gaming</br>
+                Reading</br>
+                Programming</br>
+                Swimming<br> Again... Sleeping...
+            </p>
+        </div>
+    </div>
+    <div class="parallax pl1">
+        <div class="caption fade5">
+            <p>
+                <b>Job:</b></br>
+                <a href="http://skylegends.org/">SkyLegends</a></br>
+                <a href="http://minesuperior.com/">MineSuperior</a></br>
+                <a href="http://www.islandmc.com/">IslandMC</a><br> Sadly not sleeping this time...
+            </p>
+        </div>
+    </div>
+    <div class="parallax pl2">
+        <div class="caption fade6">
+            <p>
+                <b>Contact:</b></br>
+                <a href="https://www.youtube.com/channel/UCPziF3pSau8DD6htmGjy3Hg?view_as=subscriber">YouTube</a></br>
+                <a href="https://twitter.com/MartijnPold">Twitter</a></br>
+                <a href="mailto:mrpolder@avans.nl">E-mail</a>
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
