@@ -46,3 +46,10 @@
 .caption p a {
     color: #eee;
 }
+
+@media screen and (min-width: 800px) {
+    .caption p {
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+}
