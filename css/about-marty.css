@@ -43,3 +43,7 @@
 .caption p a {
     color: #eee;
 }
+
+.caption > .small {
+    top: 75%;
+}
