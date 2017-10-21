@@ -23,6 +23,11 @@
     text-align: center;
     color: #000;
     position: fixed;
+    opacity: 0;
+}
+
+.caption + .fade1 {
+    opacity: 1;
 }
 
 .caption p {
@@ -32,5 +37,9 @@
     margin: auto;
     padding: 18px;
     font-size: 25px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.caption p a {
+    color: #eee;
 }
