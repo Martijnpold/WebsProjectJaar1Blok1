@@ -1,3 +1,15 @@
 .h1{
    padding: 5px
 }
+
+.card-container1 {
+        flex-direction: column;
+        margin: 15px 1% 0px 1%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 98%;
+        max-width: 800px;
+        background-color: rgba(255, 0, 0, 0.562);
+        transition-property: 1s;
+        animation: 0.5s ease-out 0s 1 bounce;
+        height: inherit;
+}
