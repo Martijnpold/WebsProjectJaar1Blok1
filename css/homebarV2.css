@@ -206,11 +206,13 @@ body {
 
 .footer-reserve {
     height: 20px;
+    margin-top: 10px;
 }
 
 @media screen and (min-width: 1024px) {
     .footer {
         height: 30px;
+        margin-top: 10px;
     }
 
     .footer p, .footer a {
