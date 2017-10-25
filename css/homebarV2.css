@@ -176,3 +176,44 @@ body {
         border-bottom: 0px;
     }
 }
+
+.footer {
+    position: fixed;
+    background-color: black;
+    height: 20px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer p, .footer a {
+    display: inline-block;
+    margin: 0px;
+    color: gray;
+    font-size: 15px;
+    height: 100%;
+    width: fit-content;
+    margin: 0px 5px;
+}
+
+.footer a {
+    float: right;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer-reserve {
+    height: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        height: 30px;
+    }
+
+    .footer p, .footer a {
+        font-size: 25px;
+    }
+}
